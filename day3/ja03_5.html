@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ja03_5.html</title>
+</head>
+<body>
+    <script>
+        var jumsu;
+        jumsu=prompt("점수를 입력하세요!");
+        var score=(jumsu-(jumsu%10))/10;
+
+        switch(score) {
+            case 10:
+            case 9:
+                document.write("A학점입니다.<br>");
+                break;
+            case 8:
+                document.write("B학점입니다.<br>");
+                break;
+            case 7:
+                document.write("C학접입니다.<br>");
+                break;
+            case 6:
+                document.write("D학점입니다.<br>");
+                break;
+            default:
+                document.write("F학점입니다.<br>");
+        }
+        
+        document.write("점수 : "+jumsu+"점");
+    </script>
+</body>
+</html>
