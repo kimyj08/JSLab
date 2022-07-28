@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ja08_23.html</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 다음 노드와 이전 노드가 표시됩니다.</h3>
+    <select id="selectList" size="4"><option id="item1">빨간 사과</option><option id="item2">노란 바나나</option><option id="item3">블루베리</option><option id="item4">청포도</option></select><br><br>
+    <button onclick="selectFunc()">클릭하세요</button>
+    <p id="here1"></p>
+    <p id="here2"></p>
+    <script>
+        function selectFunc() {
+            var x=document.getElementById("item2").nextSibling.innerHTML;
+            document.getElementById("here1").innerHTML=x;
+            var x=document.getElementById("item2").previousSibling.innerHTML;
+            document.getElementById("here2").innerHTML=x;
+        }
+    </script>
+</body>
+</html>
